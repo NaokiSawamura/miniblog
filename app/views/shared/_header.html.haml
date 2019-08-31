@@ -1,0 +1,15 @@
+.header
+  =link_to "https://www.facebook.com/", class: "header__logo" do
+    = image_tag 'fight_dog', size: "56x56", alt: "fight_dog"
+    %span<>
+      Mini Blog
+  .header__list
+    %ul
+      %li<
+        =link_to "https://www.facebook.com/", class: "log-in-btn" do
+          %span<>
+            ログイン
+      %li<
+        =link_to "https://twitter.com/", class: "sign-up-btn" do
+          %span<>
+            新規登録

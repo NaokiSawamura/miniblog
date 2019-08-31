@@ -1,1 +1,24 @@
-こんにちは
+.wrapper
+  = render 'shared/header'
+
+  .slider
+    .slider__contents
+
+  .body
+    .top
+      .top__image
+      .top__btns
+        -# リンク
+        .top__btns__or OR
+        -# リンク
+      .top__scroll
+    .footer
+
+
+
+.contents.row
+  - @posts.each do |post|
+    .content_post{style: "background-image: url(#{tpost.image});"}
+      = simple_format(post.content)
+      %span.name= post.name
+  = paginate(@posts)

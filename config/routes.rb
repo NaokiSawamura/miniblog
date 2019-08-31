@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   root to: 'posts#index'
   devise_for :users
-  resources :users, only: [:index, :edit, :update]
-  resources :groups, only: [:new, :create, :edit, :update] do
-    resources :messages, only: [:index, :create]
+  resources :users, only: [:index, :create, :edit, :update]
+  resources :posts do
+    resources :comments, only: [:create]
+  end
     # namespace :api do
     #   resources :messages, only: :index, defaults: { format: 'json' }
     # end
-  end
 end

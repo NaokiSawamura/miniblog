@@ -1,0 +1,41 @@
+.header {
+  min-height: 60px;
+  width: 100%;
+  background-color: rgb(255, 204, 174);
+  position: relative;
+  padding-top: 10px;
+  position: fixed;
+  z-index: 1;
+  a{
+    text-decoration: none;
+    color: black;
+    &:hover {
+      opacity: 0.5;
+    }
+    }
+  &__logo{
+    height: 50px;
+    padding: 0 1em;
+    font-size: 30px;
+    line-height: 25px;
+    float: left;
+    color:red;
+    vertical-align: middle;
+    text-align: center;
+    span{
+    }
+    }
+  ul {
+    float: right;
+    margin-right: 15px;
+  }
+  li{
+    height: 30px;
+    width: 95px;
+    border-bottom: solid 1px gray;
+    text-align: center;
+    margin: 10px 15px;
+    float: right;
+    
+    }
+}
